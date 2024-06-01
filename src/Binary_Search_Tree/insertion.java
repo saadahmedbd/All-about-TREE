@@ -1,6 +1,6 @@
 package Binary_Search_Tree;
 
-import static Binary_Search_Tree.inOrderTraversal.inOrder;
+import static Binary_Search_Tree.inOrderTraversal.*;
 import static Binary_Search_Tree.postOrderTraversal.postOrder;
 import static Binary_Search_Tree.preOrderTraversal.preOrder;
 
@@ -10,11 +10,13 @@ public class insertion {
         Node root = null;
         for(int i =0;i<values.length;i++){
             root=Node.insert(root, values[i]);
-            System.out.println(root.left);
+           // System.out.println(root.left);
         }
-        preOrder(root);
-        inOrder(root);
-        postOrder(root);
+        //preOrder(root);
+       //inOrder(root);
+        //postOrder(root);
+        System.out.println(inorderTravarsal(root));
+       // helper(root);
 
     }
     public static class Node{
