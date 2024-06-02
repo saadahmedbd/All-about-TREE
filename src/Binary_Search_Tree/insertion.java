@@ -1,8 +1,11 @@
 package Binary_Search_Tree;
 
+import static Binary_Search_Tree.countOfTree.count;
 import static Binary_Search_Tree.inOrderTraversal.*;
 import static Binary_Search_Tree.postOrderTraversal.postOrder;
 import static Binary_Search_Tree.preOrderTraversal.preOrder;
+import static Binary_Search_Tree.searching.searchNode;
+import static Binary_Search_Tree.sumOfTree.sum;
 
 public class insertion {
     public static void main(String[] args) {
@@ -15,8 +18,11 @@ public class insertion {
         //preOrder(root);
        //inOrder(root);
         //postOrder(root);
-        System.out.println(inorderTravarsal(root));
+        //System.out.println(inorderTravarsal(root));
        // helper(root);
+        //System.out.println(searchNode(root, 0));
+       // System.out.println(sum(root));
+        System.out.println(count(root));
 
     }
     public static class Node{
